@@ -95,10 +95,42 @@ section > section {
     border: 1px solid #eee;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+section > section > section {
+    background-color: #ebe3e9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation for image size increase and decrease */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    animation: scaleImage 3s infinite alternate ease-in-out;
+}
+
+/* Keyframes to scale the image */
+@keyframes scaleImage {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02); /* Increase size */
+    }
+    100% {
+        transform: scale(1); /* Decrease back to original size */
+    }
+}
+
   
 section > section:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+section > section > section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
   
   /* Button Styles */
