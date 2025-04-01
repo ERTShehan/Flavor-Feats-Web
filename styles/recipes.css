@@ -1,0 +1,278 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+  
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+  
+  /* Header Styles */
+header {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+header h1 {
+  color: #ff6b6b;
+  font-size: 2.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+  
+ header p {
+  max-width: 800px;
+  margin: 20px auto 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+  
+  /* Main Content Styles */
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px;
+}
+  
+#navigation-recipes {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+  
+h3 {
+  color: #ff6b6b;
+  font-size: 1.5rem;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+  
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+  margin: 15px 0;
+}
+  
+  /* Navigation List Styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+nav ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+  
+nav ul li::before {
+  content: '•';
+  color: #ff6b6b;
+  position: absolute;
+  left: 0;
+}
+  
+nav ul li a {
+  display: block;
+  padding: 8px 0;
+  color: #555;
+  font-weight: 500;
+}
+  
+nav ul li a:hover {
+  color: #ff6b6b;
+  transform: translateX(5px);
+}
+  
+h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+  
+  /* Footer Styles */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 25px 25px 10px;
+  font-family: 'Arial', sans-serif;
+}
+  
+footer hr {
+  border: 0;
+  height: 1px;
+  background-color: rgba(255, 107, 107, 0.3);
+  margin: 0 auto 20px;
+}
+  
+#footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding-bottom: 30px;
+}
+  
+footer h3 {
+  color: #ff6b6b;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+  
+footer h4 {
+  color: #ecf0f1;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+  
+footer h4::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #ff6b6b;
+  bottom: -8px;
+  left: 0;
+}
+  
+  /* Navigation Links */
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+  
+footer nav a {
+  color: #bdc3c7;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+  position: relative;
+}
+  
+footer nav a:hover {
+  color: #ff6b6b;
+  transform: translateX(5px);
+}
+  
+  /* footer nav a::before {
+    content: '→';
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #ff6b6b;
+  } */
+  
+footer nav a:hover::before {
+  opacity: 1;
+  left: -15px;
+}
+  
+  /* Social Media Icons */
+footer section:nth-child(2) nav {
+  flex-direction: row;
+  gap: 15px;
+}
+  
+footer section:nth-child(2) nav a {
+  margin-bottom: 0;
+}
+  
+footer section:nth-child(2) img {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+  
+footer section:nth-child(2) img:hover {
+  filter: none;
+  transform: translateY(-5px);
+}
+ 
+  /* Copyright Section */
+footer section:last-child {
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+  
+footer section:last-child p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+  #footer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  footer h3, footer h4 {
+    text-align: center;
+  }
+  
+  footer h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  footer nav {
+    align-items: center;
+  }
+  
+  footer section:nth-child(2) nav {
+    justify-content: center;
+  }
+  }
+  
+@media (max-width: 480px) {
+  footer {
+    padding: 30px 15px 15px;
+  }
+  
+  footer h3 {
+    font-size: 1.5rem;
+  }
+  
+  footer h4 {
+    font-size: 1.1rem;
+  }
+  
+  footer nav a {
+    font-size: 0.9rem;
+  }
+  
+  footer section:nth-child(2) img {
+    width: 35px;
+    height: 35px;
+  }
+}
+ 

@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes</title>
+    <link rel="stylesheet" href="/styles/recipes.css" />
   </head>
   <body>
     <header>
       <div>
         <a href="/index.html"><h1>FLAVOR FEATS</h1></a>
       </div>
-      <h1 align="center">Recipes</h1>
+      <h1>Recipes</h1>
       <p>
         Explore a world of flavors with our diverse collection of Sri Lankan and
         international recipes. From breakfast to dinner, beverages to desserts,
@@ -19,72 +20,73 @@
     </header>
 
     <main>
-      <section>
-        <h3>New Recipes</h3>
-        <hr />
-      </section>
+      <section id="navigation-recipes">
+        <section>
+          <h3>New Recipes</h3>
+          <hr />
+        </section>
 
-      <section>
-        <!-- <nav>
+        <section>
+          <!-- <nav>
           <a href="/pages/breakfast.html"><h3>Breakfast</h3></a>
         </nav>
         <hr />
         <br /> -->
 
-        <h3>Breakfast</h3>
-        <nav>
-          <ul>
-            <a href="/pages/breakfast.html#srilankabreakfast"
-              ><h4><li>Sri Lankan Breakfast</li></h4></a
-            >
-            <a href="/pages/breakfast.html#healthyRecipes"
-              ><h4><li>Healthy Breakfast Recipes</li></h4></a
-            >
-            <a href="/pages/breakfast.html#easyBreakfast"
-              ><h4><li>Easy Breakfast Recipes</li></h4></a
-            >
-          </ul>
-        </nav>
-        <hr />
-        <br />
-      </section>
+          <h3>Breakfast</h3>
+          <nav>
+            <ul>
+              <a href="/pages/breakfast.html#srilankabreakfast"
+                ><h4><li>Sri Lankan Breakfast</li></h4></a
+              >
+              <a href="/pages/breakfast.html#healthyRecipes"
+                ><h4><li>Healthy Breakfast Recipes</li></h4></a
+              >
+              <a href="/pages/breakfast.html#easyBreakfast"
+                ><h4><li>Easy Breakfast Recipes</li></h4></a
+              >
+            </ul>
+          </nav>
+          <hr />
+          <br />
+        </section>
 
-      <section>
-        <nav>
-          <a href="/pages/lunch.html"><h3>Lunch</h3></a>
-        </nav>
-        <hr />
-        <br />
-      </section>
+        <section>
+          <nav>
+            <a href="/pages/lunch.html"><h3>Lunch</h3></a>
+          </nav>
+          <hr />
+          <br />
+        </section>
 
-      <section>
-        <nav>
-          <a href="/pages/dinner.html"><h3>Dinner</h3></a>
-        </nav>
-        <hr />
-        <br />
-      </section>
+        <section>
+          <nav>
+            <a href="/pages/dinner.html"><h3>Dinner</h3></a>
+          </nav>
+          <hr />
+          <br />
+        </section>
 
-      <section>
-        <h3>Beverage</h3>
-        <nav>
-          <ul>
-            <a href="/pages/beverage.html#juice"
-              ><h4><li>Juice</li></h4></a
-            >
-            <a href="/pages/beverage.html#soups"
-              ><h4><li>Soups</li></h4></a
-            >
-            <a href="/pages/beverage.html#healthy"
-              ><h4><li>Healthy Porridge</li></h4></a
-            >
-          </ul>
-        </nav>
-        <hr />
-        <br />
-      </section>
+        <section>
+          <h3>Beverage</h3>
+          <nav>
+            <ul>
+              <a href="/pages/beverage.html#juice"
+                ><h4><li>Juice</li></h4></a
+              >
+              <a href="/pages/beverage.html#soups"
+                ><h4><li>Soups</li></h4></a
+              >
+              <a href="/pages/beverage.html#healthy"
+                ><h4><li>Healthy Porridge</li></h4></a
+              >
+            </ul>
+          </nav>
+          <hr />
+          <br />
+        </section>
 
-      <!-- <section>
+        <!-- <section>
         <nav>
           <a href="/pages/desserts.html"><h3>Desserts</h3></a>
         </nav>
@@ -100,13 +102,13 @@
         <br />
       </section> -->
 
-      <section>
-        <nav>
-          <a href="/pages/restaurants.html"><h3>Restaurants Foods</h3></a>
-        </nav>
-        <hr />
-        <br />
-        <!-- <nav>
+        <section>
+          <nav>
+            <a href="/pages/restaurants.html"><h3>Restaurants Foods</h3></a>
+          </nav>
+          <hr />
+          <br />
+          <!-- <nav>
           <ul>
             <a href=""
               ><h4><li>Sea Foods</li></h4></a
@@ -121,48 +123,51 @@
         </nav>
         <hr />
         <br /> -->
+        </section>
       </section>
 
       <footer>
         <hr />
-        <section>
+        <section id="footer">
           <h3>FLAVOR FEATS</h3>
-          <h4>FOOD & RECIPES</h4>
-          <nav>
-            <a href="/pages/breakfast.html">Breakfast</a><br />
-            <a href="/pages/lunch.html">Lunch</a><br />
-            <a href="/pages/dinner.html">Dinner</a><br />
-            <a href="/pages/beverage.html">Beverage</a><br />
-          </nav>
+          <div class="food-recipes">
+            <h4>FOOD & RECIPES</h4>
+            <nav>
+              <a href="/pages/breakfast.html">Breakfast</a><br />
+              <a href="/pages/lunch.html">Lunch</a><br />
+              <a href="/pages/dinner.html">Dinner</a><br />
+              <a href="/pages/beverage.html">Beverage</a><br />
+            </nav>
+          </div>
+
+          <div class="follow-us">
+            <h4>FLLOW US</h4>
+            <nav>
+              <a href="https://github.com/ERTShehan" target="_blank"
+                ><img src="/images/github.png" alt="Github"
+              /></a>
+
+              <a
+                href="https://www.linkedin.com/in/tharindu-shehan-734366346/"
+                target="_blank"
+                ><img src="/images/linkedin.png" alt="Linkedin"
+              /></a>
+
+              <a
+                href="https://tharindushehan-portfolio.web.app/"
+                target="_blank"
+                ><img src="/images/website.png" alt="Web Search"
+              /></a>
+
+              <a href="mailto:dertsshehan@gmail.com"
+                ><img src="/images/email.png" alt="Email me"
+              /></a>
+            </nav>
+          </div>
         </section>
 
-        <section>
-          <h4>FLLOW US</h4>
-          <nav>
-            <a href="https://github.com/ERTShehan" target="_blank"
-              ><img src="/images/github.png" alt="Github"
-            /></a>
-
-            <a
-              href="https://www.linkedin.com/in/tharindu-shehan-734366346/"
-              target="_blank"
-              ><img src="/images/linkedin.png" alt="Linkedin"
-            /></a>
-
-            <a href="https://tharindushehan-portfolio.web.app/" target="_blank"
-              ><img src="/images/website.png" alt="Web Search"
-            /></a>
-
-            <a href="mailto:dertsshehan@gmail.com"
-              ><img src="/images/email.png" alt="Email me"
-            /></a>
-          </nav>
-        </section>
-
-        <section>
-          <p align="center">
-            Copyright &copy;2025 Flavor Feats. All rights reserved.
-          </p>
+        <section id="copyright">
+          <p>Copyright &copy;2025 Flavor Feats. All rights reserved.</p>
         </section>
       </footer>
     </main>
