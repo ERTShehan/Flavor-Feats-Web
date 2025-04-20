@@ -1,3 +1,4 @@
+/* dinner.css */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -40,7 +41,7 @@ main {
     padding: 20px;
 }
 
-#breakfast {
+#dinner {
     margin-bottom: 40px;
     background-color: #fff;
     padding: 30px;
@@ -69,14 +70,14 @@ h2::after {
     transform: translateX(-50%);
 }
   
-#breakfast h3 {
+#dinner h3 {
     color: #2c3e50;
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
 }
   
-#breakfast p {
+#dinner p {
     color: #555;
     font-size: 1.1rem;
     line-height: 1.8;
@@ -122,7 +123,7 @@ section > section:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
   
-#breakfast button {
+#dinner button {
     background-color: #ff6b6b;
     color: white;
     border: none;
@@ -138,7 +139,7 @@ section > section:hover {
     letter-spacing: 1px;
 }
   
-#breakfast button:hover {
+#dinner button:hover {
     background-color: #e05555;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
@@ -209,7 +210,7 @@ footer nav a {
     padding: 5px 0;
     position: relative;
 }
-
+  
 footer nav a:hover {
     color: #ff6b6b;
     transform: translateX(5px);
@@ -254,7 +255,6 @@ footer section:last-child p {
     margin: 0;
 }
   
-  
 @media (max-width: 900px) {
     header h1 {
         font-size: 2rem;
@@ -268,7 +268,7 @@ footer section:last-child p {
         font-size: 1.3rem;
     }
     
-    #breakfast {
+    #dinner {
         padding: 20px;
     }
     
@@ -324,7 +324,7 @@ footer section:last-child p {
         padding: 10px;
     }
     
-    #breakfast {
+    #dinner {
         padding: 15px;
     }
     

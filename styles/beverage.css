@@ -40,7 +40,7 @@ main {
     padding: 20px;
 }
 
-#breakfast {
+#beverage {
     margin-bottom: 40px;
     background-color: #fff;
     padding: 30px;
@@ -69,14 +69,14 @@ h2::after {
     transform: translateX(-50%);
 }
   
-#breakfast h3 {
+#beverage h3 {
     color: #2c3e50;
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
 }
   
-#breakfast p {
+#beverage p {
     color: #555;
     font-size: 1.1rem;
     line-height: 1.8;
@@ -87,7 +87,7 @@ h2::after {
     margin-right: auto;
 }
   
-section > section {
+#beverage > div {
     margin-bottom: 50px;
     padding: 25px;
     border-radius: 15px;
@@ -97,7 +97,11 @@ section > section {
     border: 1px solid #f0f0f0;
 }
 
-section > section img {
+#beverage > div section {
+    margin-bottom: 40px;
+}
+
+#beverage > div img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -112,17 +116,17 @@ section > section img {
     100% { transform: scale(1); }
 }
 
-section > section:hover img {
+#beverage > div:hover img {
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
   
-section > section:hover {
+#beverage > div:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
   
-#breakfast button {
+#beverage button {
     background-color: #ff6b6b;
     color: white;
     border: none;
@@ -138,7 +142,7 @@ section > section:hover {
     letter-spacing: 1px;
 }
   
-#breakfast button:hover {
+#beverage button:hover {
     background-color: #e05555;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
@@ -209,7 +213,7 @@ footer nav a {
     padding: 5px 0;
     position: relative;
 }
-
+  
 footer nav a:hover {
     color: #ff6b6b;
     transform: translateX(5px);
@@ -254,7 +258,6 @@ footer section:last-child p {
     margin: 0;
 }
   
-  
 @media (max-width: 900px) {
     header h1 {
         font-size: 2rem;
@@ -268,11 +271,11 @@ footer section:last-child p {
         font-size: 1.3rem;
     }
     
-    #breakfast {
+    #beverage {
         padding: 20px;
     }
     
-    section > section {
+    #beverage > div {
         padding: 20px;
     }
     
@@ -290,7 +293,7 @@ footer section:last-child p {
         align-items: center;
     }
     
-    footer section:nth-child(2) nav {
+    .follow-us nav {
         justify-content: center;
     }
 }
@@ -313,7 +316,7 @@ footer section:last-child p {
         font-size: 0.9rem;
     }
     
-    footer section:nth-child(2) img {
+    .follow-us img {
         width: 35px;
         height: 35px;
     }
@@ -324,11 +327,11 @@ footer section:last-child p {
         padding: 10px;
     }
     
-    #breakfast {
+    #beverage {
         padding: 15px;
     }
     
-    section > section {
+    #beverage > div {
         padding: 15px;
     }
 }
